@@ -1,0 +1,14 @@
+{
+    "name": "mastahed/larapost",
+    "description": "Basic Post & Comment Module",
+    "authors": [
+        {
+            "name": "Ed Ryan Alburo",
+            "email": "edryanalburo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "cviebrock/eloquent-sluggable": "^4.1"
+    }
+}
