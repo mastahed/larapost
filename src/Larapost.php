@@ -59,6 +59,26 @@ class Larapost {
     }
 
     /**
+     * Get specific Post using ID
+     *
+     * @return bool
+     */
+    public static function getAllPost() {
+
+        try {
+
+            $posts   = LarapostPost::all();
+
+        } catch (\Exception $e) {
+
+            return $e->getMessage();
+
+        }
+
+        return $posts;
+    }
+
+    /**
      * Add new comment to Post
      *
      * @param Request $request
