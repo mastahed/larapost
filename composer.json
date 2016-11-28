@@ -7,8 +7,14 @@
             "email": "edryanalburo@gmail.com"
         }
     ],
+    "keywords": ["laravel","post","comment"],
     "minimum-stability": "dev",
     "require": {
       "cviebrock/eloquent-sluggable": "^4.1"
+    },
+    "autoload": {
+      "psr-4": {
+        "MastahEd\\Larapost\\": "/src"
+      }
     }
 }
