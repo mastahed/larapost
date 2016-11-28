@@ -63,7 +63,7 @@ class Larapost {
      *
      * @return bool
      */
-    public static function getAllPost() {
+    public static function getAllPosts() {
 
         try {
 
