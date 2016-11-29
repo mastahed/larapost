@@ -82,18 +82,15 @@ class Larapost {
      * Add new comment to Post
      *
      * @param Request $request
-     * @param LarapostPost $post
      * @return bool
      */
-    public static function addComment(Request $request, LarapostPost $post) {
+    public static function addComment(Request $request) {
 
         DB::beginTransaction();
 
         try {
 
-            if($post) {
-                LarapostComment::create($request->all() + ['post_id'=>$post->id]);
-            }
+            LarapostComment::create($request->all());
 
         } catch (\Exception $e) {
 
